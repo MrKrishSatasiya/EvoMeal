@@ -1,0 +1,63 @@
+span.svelte-1847ehx {
+    border-radius: 100%;
+    content: " ";
+    display: inline-block;
+    height: .5em;
+    width: .5em
+}
+
+span.carbs.svelte-1847ehx {
+    background-color: var(--carbs-color)
+}
+
+span.fats.svelte-1847ehx {
+    background-color: var(--fats-color)
+}
+
+span.proteins.svelte-1847ehx {
+    background-color: var(--proteins-color)
+}
+
+img.svelte-1no711w {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--border-radius);
+    display: block;
+    grid-area: food-image;
+    object-fit: contain
+}
+
+img.svelte-1no711w:not(.full) {
+    width: 3.3rem
+}
+
+.full.svelte-1no711w {
+    width: 100%
+}
+
+a.svelte-k5vk40 {
+    font-weight: var(--semi-bold)
+}
+
+.description.svelte-k5vk40 {
+    display: block
+}
+
+.food.svelte-k5vk40 {
+    padding-left: 3.8rem
+}
+
+.food.svelte-k5vk40 .image:where(.svelte-k5vk40) {
+    float: left;
+    margin-left: -3.8rem;
+    margin-top: .1rem
+}
+
+.food.center.svelte-k5vk40 a:where(.svelte-k5vk40) {
+    align-items: center;
+    display: flex;
+    gap: .5em
+}
+
+.food.center.svelte-k5vk40 .image:where(.svelte-k5vk40) {
+    flex-shrink: 0
+}

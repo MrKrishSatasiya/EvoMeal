@@ -1,0 +1,464 @@
+html {
+    color-scheme: light;
+    --active: hsl(205, 55%, 38%);
+    --background: hsl(205, 80%, 99.8%);
+    --card: hsl(205, 65%, 97%);
+    --link: hsl(205, 100%, 28%);
+    --link-hover: hsl(205, 100%, 15%);
+    --primary: hsl(14, 84%, 63%);
+    --border-color: hsl(205, 30%, 88%);
+    --nav-background: hsl(205, 14%, 15%);
+    --max-line-length: 60rem;
+    --widget-background: var(--background);
+    --zebra-stripe: hsl(205, 15%, 97%);
+    --input-background: var(--background);
+    --input-hover: hsla(205, 15%, 22%, .03);
+    --input-focus: white;
+    --input-border-color: hsl(205, 25%, 80%);
+    --input-border: 1px solid var(--input-border-color);
+    --border: 1px solid var(--border-color);
+    --border-radius: .3rem;
+    --button-height: 2.5rem;
+    --gutter: 1rem;
+    --icon-height: 1.25rem;
+    --list-padding: 5ch;
+    --carbs-color: hsl(45, 97%, 48%);
+    --fats-color: hsl(185, 85%, 43.5%);
+    --proteins-color: hsl(260, 100%, 73%);
+    --elevation-1: 1px 1px 3px rgba(0, 0, 0, .4);
+    --elevation-2: 2px 4px 7px rgba(0, 0, 0, .25);
+    --elevation-3: 4px 8px 15px rgba(0, 0, 0, .2);
+    --text: hsl(205, 15%, 22%);
+    --text-reversed: hsl(205, 0%, 100%);
+    --semi-bold: 600;
+    --text-small: .83rem;
+    --text-regular: 1rem;
+    --text-large: 1.333rem;
+    --text-header: 1.5rem;
+    --text-title: 2.25rem;
+    --text-page-title: 3.157rem;
+    --warning-background: hsl(14, 85%, 96%);
+    --warning-text: hsl(14, 100%, 36%);
+    --z-index-toast: 200
+}
+
+[data-color-scheme=dark] {
+    --background: hsl(215, 4%, 12.5%);
+    --link: hsl(215, 80%, 65%);
+    --link-hover: hsl(215, 80%, 70%);
+    --text: hsl(215, 5%, 85%)
+}
+
+@media (max-width: 45rem) {
+    :root {
+        --list-padding: 3ch
+    }
+}
+
+* {
+    scroll-margin-top: 7em
+}
+
+html,
+body {
+    margin: 0
+}
+
+html {
+    background: var(--background);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.4
+}
+
+@media (max-width: 45rem) {
+    :root {
+        --text-small: .8rem;
+        --text-regular: 1rem;
+        --text-large: 1.25rem;
+        --text-header: 1.563rem;
+        --text-title: 1.953rem;
+        --text-page-title: 2.441rem
+    }
+    html {
+        font-size: 100%
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth
+    }
+}
+
+body {
+    line-height: 1.5;
+    position: relative
+}
+
+a {
+    color: var(--link);
+    text-decoration: none
+}
+
+a:where(:focus-visible),
+a:where(:hover) {
+    color: var(--link-hover);
+    text-decoration: underline
+}
+
+address {
+    font-style: normal
+}
+
+b {
+    font-weight: var(--semi-bold)
+}
+
+blockquote {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+    padding-left: 2em;
+    position: relative
+}
+
+blockquote:before {
+    color: var(--primary);
+    content: "“";
+    font-family: Times New Roman, Times, serif;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: -.8rem
+}
+
+button {
+    cursor: pointer;
+    font: inherit
+}
+
+figure {
+    margin: 0
+}
+
+figcaption {
+    font-weight: var(--semi-bold);
+    text-align: center
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--semi-bold);
+    line-height: 1.2;
+    margin: 1.2em 0 .8em
+}
+
+h1 {
+    font-size: var(--text-page-title);
+    line-height: 1.1;
+    margin-top: 0;
+    text-align: center
+}
+
+h2 {
+    font-size: var(--text-title);
+    text-align: center
+}
+
+h3 {
+    font-size: var(--text-header)
+}
+
+h4 {
+    font-size: var(--text-large)
+}
+
+h5 {
+    font-size: var(--text-regular)
+}
+
+hgroup {
+    margin: 1em 0
+}
+
+hgroup :is(h1, h2, h3, h4, h5) {
+    margin: 0
+}
+
+hgroup p {
+    margin: 0
+}
+
+hgroup :is(h1, h2)~p {
+    font-weight: var(--semi-bold);
+    text-align: center
+}
+
+hgroup h1~p {
+    font-size: var(--text-large)
+}
+
+hgroup :is(h4, h5)~p {
+    font-size: var(--text-small)
+}
+
+hr {
+    border: var(--border);
+    margin: 2em
+}
+
+i {
+    font-style: normal;
+    font-weight: var(--semi-bold)
+}
+
+iframe,
+img {
+    max-width: 100%
+}
+
+ol,
+ul {
+    margin: 1em 0;
+    padding-left: var(--list-padding)
+}
+
+small {
+    font-size: var(--text-small)
+}
+
+strong {
+    font-weight: var(--semi-bold)
+}
+
+svg.feather {
+    aspect-ratio: 1;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+    width: 1.5em
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+thead th {
+    font-weight: var(--semi-bold)
+}
+
+th {
+    font-weight: inherit;
+    text-align: left
+}
+
+.footer.svelte-1pq9u9i {
+    align-items: flex-start;
+    display: flex;
+    font-size: var(--text-small);
+    gap: 2em 4em;
+    justify-content: space-between
+}
+
+.links.svelte-1pq9u9i {
+    container-type: inline-size;
+    flex-grow: 1
+}
+
+.social.svelte-1pq9u9i a:where(.svelte-1pq9u9i) {
+    gap: .3em;
+    display: flex
+}
+
+li.svelte-1pq9u9i {
+    margin: .3em 0
+}
+
+ul.svelte-1pq9u9i {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+img.svelte-1pq9u9i {
+    filter: grayscale(1);
+    opacity: .6;
+    width: 10em
+}
+
+.svelte-1pq9u9i:focus-visible img:where(.svelte-1pq9u9i),
+img.svelte-1pq9u9i:hover {
+    filter: grayscale(0);
+    opacity: 1
+}
+
+@container (width > 22em) {
+    .links.svelte-1pq9u9i ul:where(.svelte-1pq9u9i) {
+        columns: 2
+    }
+}
+
+@media (max-width: 50em) {
+    .links.svelte-1pq9u9i {
+        container-type: normal
+    }
+    .footer.svelte-1pq9u9i {
+        flex-direction: column
+    }
+}
+
+body.menu-open {
+    overflow: hidden
+}
+
+.main-nav.svelte-mikcfs {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em
+}
+
+a.svelte-mikcfs {
+    color: inherit
+}
+
+button.svelte-mikcfs {
+    display: none
+}
+
+ul.svelte-mikcfs {
+    align-items: center;
+    display: flex;
+    font-weight: var(--semi-bold);
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.svelte-mikcfs a:where(.svelte-mikcfs) {
+    display: block;
+    padding: 0 1em;
+    text-align: center
+}
+
+.log-in.svelte-mikcfs {
+    text-align: center
+}
+
+.log-in.svelte-mikcfs p:where(.svelte-mikcfs) {
+    margin: .5rem 0 0;
+    font-size: var(--text-small)
+}
+
+.logo.svelte-mikcfs .desktop:where(.svelte-mikcfs) {
+    height: 5em;
+    width: auto
+}
+
+.logo.svelte-mikcfs .mobile:where(.svelte-mikcfs) {
+    display: none
+}
+
+.menu.svelte-mikcfs {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between
+}
+
+@media (max-width: 60em) {
+    button.svelte-mikcfs {
+        background: none;
+        border: none;
+        color: var(--text-reversed);
+        cursor: pointer;
+        display: block
+    }
+    li.svelte-mikcfs,
+    ul.svelte-mikcfs {
+        width: 100%
+    }
+    .log-in.svelte-mikcfs {
+        margin: 2em 0
+    }
+    .logo.svelte-mikcfs .desktop:where(.svelte-mikcfs) {
+        display: none
+    }
+    .logo.svelte-mikcfs .mobile:where(.svelte-mikcfs) {
+        display: block;
+        height: 2.5em;
+        width: auto
+    }
+    .menu.svelte-mikcfs {
+        --nav-height: 3.5em;
+        background: var(--nav-background);
+        box-sizing: border-box;
+        display: flex;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: var(--nav-height);
+        transition: height .15s ease-in-out;
+        will-change: height;
+        z-index: 100
+    }
+    .menu.open.svelte-mikcfs {
+        height: calc(100vh - var(--nav-height));
+        height: calc(100dvh - var(--nav-height))
+    }
+    ul.svelte-mikcfs {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .5em;
+        margin: 1em 0
+    }
+    ul.svelte-mikcfs a:where(.svelte-mikcfs) {
+        font-size: var(--text-large);
+        text-align: left
+    }
+}
+
+.body.svelte-oma1la {
+    contain: paint
+}
+
+nav.svelte-oma1la {
+    background: var(--nav-background);
+    color: var(--primary);
+    padding: .5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 100
+}
+
+footer.svelte-oma1la {
+    border-top: var(--border);
+    border-top-width: 2px;
+    margin-top: 4em;
+    padding: 1.5em 0
+}
+
+nav.svelte-oma1la>div:where(.svelte-oma1la),
+main.svelte-oma1la,
+footer.svelte-oma1la>div:where(.svelte-oma1la) {
+    margin: 0 auto;
+    max-width: var(--max-line-length);
+    padding: 0 1em
+}
+
+main.svelte-oma1la {
+    margin-top: 2em
+}

@@ -1,0 +1,111 @@
+svg.svelte-1dfmvuq {
+    animation: svelte-1dfmvuq-fade-in .2s ease-out;
+    display: block;
+    height: 2em;
+    margin: 1em auto;
+    width: 6em
+}
+
+@keyframes svelte-1dfmvuq-fade-in {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.pacman.svelte-1dfmvuq {
+    animation: svelte-1dfmvuq-chomp .2s linear infinite alternate;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 50
+}
+
+@keyframes svelte-1dfmvuq-chomp {
+    0% {
+        stroke-dasharray: 157, 100;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 110, 100;
+        stroke-dashoffset: -20
+    }
+}
+
+.pellet.svelte-1dfmvuq {
+    animation: svelte-1dfmvuq-move .5s linear infinite;
+    fill: var(--primary);
+    transform-origin: center
+}
+
+@keyframes svelte-1dfmvuq-move {
+    0% {
+        transform: translate(0)
+    }
+    to {
+        transform: translate(-50px)
+    }
+}
+
+circle.svelte-yx7d4v {
+    animation: svelte-yx7d4v-rotate .8s linear infinite, svelte-yx7d4v-size .4s linear infinite alternate;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-width: 2
+}
+
+svg.svelte-yx7d4v {
+    display: inline-block;
+    height: var(--icon-height);
+    width: var(--icon-height)
+}
+
+@keyframes svelte-yx7d4v-rotate {
+    0% {
+        transform: rotate(90deg)
+    }
+    to {
+        transform: rotate(450deg)
+    }
+}
+
+@keyframes svelte-yx7d4v-size {
+    0% {
+        stroke-dasharray: 10 53
+    }
+    to {
+        stroke-dasharray: 25 38
+    }
+}
+
+div.svelte-n7mqkg {
+    background: var(--placeholder);
+    height: 3px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: var(--z-index-toast)
+}
+
+div.svelte-n7mqkg:before {
+    animation: svelte-n7mqkg-loading 2s cubic-bezier(.3, 0, .8, .15) infinite;
+    background: var(--primary);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40%
+}
+
+@keyframes svelte-n7mqkg-loading {
+    0% {
+        transform: translate(-100%)
+    }
+    to {
+        transform: translate(250%)
+    }
+}

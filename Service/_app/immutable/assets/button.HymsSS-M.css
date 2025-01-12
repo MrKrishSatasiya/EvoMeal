@@ -1,0 +1,55 @@
+._interaction_11et8_1,
+._interaction_11et8_1>* {
+    position: relative
+}
+
+._interaction_11et8_1:not(:disabled):before {
+    background: currentColor;
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: background-color .15s ease-in-out, opacity .15s ease-in-out
+}
+
+._interaction_11et8_1:before {
+    opacity: 0
+}
+
+._interaction_11et8_1:hover:before,
+._interaction_11et8_1:focus-visible:before {
+    opacity: .05
+}
+
+._interaction_11et8_1:has(:focus-visible):before {
+    opacity: .05
+}
+
+._interaction_11et8_1:active:before {
+    opacity: .1
+}
+
+._button_1l7k0_1 {
+    align-items: center;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    color: var(--text-reversed);
+    display: inline-flex;
+    justify-content: center;
+    min-height: var(--button-height);
+    padding: 0 2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+._button_1l7k0_1:disabled {
+    opacity: .5
+}
+
+._button_1l7k0_1.secondary {
+    background: var(--background);
+    color: var(--primary)
+}
