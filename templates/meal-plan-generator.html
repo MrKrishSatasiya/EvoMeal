@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Free AI Meal Plan Generator | Easy-Peasy.AI</title>
+    <meta name="robots" content="follow, index" />
+    <meta content="Generate a personalized meal plan based on your dietary preferences. Use it for Free."
+        name="description" />
+    <link rel="canonical" href="templates/meal-plan-generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Easy-Peasy.AI" />
+    <meta property="og:description"
+        content="Generate a personalized meal plan based on your dietary preferences. Use it for Free." />
+    <meta property="og:title" content="Free AI Meal Plan Generator | Easy-Peasy.AI" />
+    <meta name="image" property="og:image"
+        content="api/og-template?title=Meal Plan Generator&amp;description=Generate a personalized meal plan based on your dietary preferences." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@easy_peasy_ai" />
+    <meta name="twitter:title" content="Free AI Meal Plan Generator | Easy-Peasy.AI" />
+    <meta name="twitter:description"
+        content="Generate a personalized meal plan based on your dietary preferences. Use it for Free." />
+    <meta name="twitter:image"
+        content="api/og-template?title=Meal Plan Generator&amp;description=Generate a personalized meal plan based on your dietary preferences." />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: gray;
+            border-radius: 0px;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="alternate" href="templates/meal-plan-generator" hrefLang="x-default" />
+    <link rel="alternate" href="ja/templates/meal-plan-generator" hrefLang="ja" />
+    <link rel="alternate" href="es/templates/meal-plan-generator" hrefLang="es" />
+    <link rel="alternate" href="fr/templates/meal-plan-generator" hrefLang="fr" />
+    <link rel="alternate" href="it/templates/meal-plan-generator" hrefLang="it" />
+    <link rel="alternate" href="de/templates/meal-plan-generator" hrefLang="de" />
+    <link rel="alternate" href="ko/templates/meal-plan-generator" hrefLang="ko" />
+    <link rel="alternate" href="zh/templates/meal-plan-generator" hrefLang="zh" />
+    <link rel="alternate" href="th/templates/meal-plan-generator" hrefLang="th" />
+    <link rel="alternate" href="ar/templates/meal-plan-generator" hrefLang="ar" />
+    <link rel="alternate" href="pt/templates/meal-plan-generator" hrefLang="pt" />
+    
+    <link rel="preload" as="image"
+        imageSrcSet="/_next/image?url=%2Fimages%2Fmarky.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fmarky.png&amp;w=640&amp;q=75 2x"
+        fetchpriority="high" />
+    <meta name="next-head-count" content="45" />
+    <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <script type="16ac5b3892f946b135b27a50-text/javascript">
+        let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function updateTheme(savedTheme) {
+            let theme = 'system'
+            try {
+                if (!savedTheme) {
+                    savedTheme = window.localStorage.theme
+                }
+                if (savedTheme === 'dark') {
+                    theme = 'dark'
+                    document.documentElement.classList.add('dark')
+                } else if (savedTheme === 'light') {
+                    theme = 'light'
+                    document.documentElement.classList.remove('dark')
+                } else if (mediaQuery.matches) {
+                    document.documentElement.classList.add('dark')
+                } else {
+                    document.documentElement.classList.remove('dark')
+                }
+            } catch {
+                theme = 'light'
+                document.documentElement.classList.remove('dark')
+            }
+            return theme
+        }
+
+        function updateThemeWithoutTransitions(savedTheme) {
+            updateTheme(savedTheme)
+            document.documentElement.classList.add('[&_*]:!transition-none')
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('[&_*]:!transition-none')
+            }, 0)
+        }
+
+        document.documentElement.setAttribute('data-theme', updateTheme())
+
+        new MutationObserver(([{
+            oldValue
+        }]) => {
+            let newValue = document.documentElement.getAttribute('data-theme')
+            if (newValue !== oldValue) {
+                try {
+                    window.localStorage.setItem('theme', newValue)
+                } catch {}
+                updateThemeWithoutTransitions(newValue)
+            }
+        }).observe(document.documentElement, {
+            attributeFilter: ['data-theme'],
+            attributeOldValue: true
+        })
+
+        mediaQuery.addEventListener('change', updateThemeWithoutTransitions)
+        window.addEventListener('storage', updateThemeWithoutTransitions)
+    </script>
+    <link rel="preload" href="/_next/static/css/27f7036b2e95a5b7.css" as="style" crossorigin="" />
+    <link rel="stylesheet" href="/_next/static/css/27f7036b2e95a5b7.css" crossorigin="" data-n-g="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/55176-6fe77d50d0320245.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/98651.6605d7687b6f66a2.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/41155975-e7ee924b319b6fe6.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/85d7bc83-074f7309d91426d8.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/e21e5bbe-f2d6d4b497170d3d.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/76085-dd803389acf9c390.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/54918-163335335f2b7f29.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/62007-735bf610ee67b1c9.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/99245-4874401ed88376b2.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/49575.6cfdefe35aa3d2d0.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/67466-dc0c01066901ba91.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/72128-68b48ec2f7e7fe8e.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/86399-a2c27cee1c5b0836.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/88014-b70eb45b7a137b72.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/73871-3801580463f3a67e.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/48893-109ad1d9ad215650.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/96493.9efdfa5f938b4dc9.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/70685.3b55df94c225c18e.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/75475.5562b8ff3314c204.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/27910.fe22cbcc66e9a32e.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/30260.afc50cd2e03d1c4f.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/47950.4afe4f27ec64dbad.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/5951.9d35ba77b7defd54.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script defer="" src="/_next/static/chunks/55042-cffca7f1bb99d874.js" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/chunks/webpack-cea90b725a6ea59e.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/chunks/framework-609e8429b1e991de.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/chunks/main-96bc673caccc7e71.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/chunks/pages/_app-2df8dfdef632a5db.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/chunks/pages/templates/%5Bslug%5D-421fd0a80d444eb7.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/xy_M1UjDem6TTdP-c_OZH/_buildManifest.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+    <script src="/_next/static/xy_M1UjDem6TTdP-c_OZH/_ssgManifest.js" defer="" crossorigin=""
+        type="16ac5b3892f946b135b27a50-text/javascript"></script>
+</head>
+
+<body>
+    <div id="__next">
+        <main class="bg-gray-100 dark:bg-slate-900">
+            <div class="relative overflow-hidden bg-white dark:bg-slate-900">
+                <div class="mx-auto">
+                    <div class="relative z-10 bg-white dark:bg-slate-900  lg:w-full ">
+                        <div class="bg-gray-50 relative dark:bg-slate-900">
+
+                        </div>
+                        <div
+                            class="hidden absolute inset-x-0 top-0 z-[999] origin-top-right transform p-2 transition xl:hidden">
+                            <div
+                                class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5 dark:bg-slate-900">
+                                <div class="flex items-center justify-between px-5 pt-4">
+                                    <div>
+                                        <div class="inline-flex align-middle"><span
+                                                class=" text-gray-500">Settings</span>
+                                            <div class="relative ml-2 mr-3" data-headlessui-state=""><label
+                                                    class="sr-only" id="headlessui-listbox-label-:Rqb4km:"
+                                                    data-headlessui-state="">Theme</label><button
+                                                    class="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                                                    id="headlessui-listbox-button-:R1ab4km:" type="button"
+                                                    aria-haspopup="true" aria-expanded="false"
+                                                    data-headlessui-state=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                                                        class=" h-4 w-4 fill-primary-400">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg></button></div>
+                                            <div class=" relative" data-headlessui-state=""><label class="sr-only"
+                                                    id="headlessui-listbox-label-:Rrb4km:"
+                                                    data-headlessui-state="">Theme</label><button
+                                                    class="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                                                    id="headlessui-listbox-button-:R1bb4km:" type="button"
+                                                    aria-haspopup="true" aria-expanded="false"
+                                                    data-headlessui-state=""><svg aria-hidden="true" viewBox="0 0 16 16"
+                                                        class="[[data-theme=light]_&amp;]:block hidden h-4 w-4 fill-primary-400">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z">
+                                                        </path>
+                                                    </svg><svg aria-hidden="true" viewBox="0 0 16 16"
+                                                        class="[[data-theme=dark]_&amp;]:block hidden h-4 w-4 fill-primary-400">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z">
+                                                        </path>
+                                                    </svg><svg aria-hidden="true" viewBox="0 0 16 16"
+                                                        class="[:not(.dark)[data-theme=system]_&amp;]:block hidden h-4 w-4 fill-slate-400">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z">
+                                                        </path>
+                                                    </svg><svg aria-hidden="true" viewBox="0 0 16 16"
+                                                        class="[.dark[data-theme=system]_&amp;]:block hidden h-4 w-4 fill-slate-400">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z">
+                                                        </path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="-mr-2"><button type="button"
+                                            class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-slate-800 dark:text-slate-200"><span
+                                                class="sr-only">Close main menu</span><svg class="h-6 w-6"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg></button></div>
+                                </div>
+                                <div class=" space-y-1 px-2 pb-3 pt-2"><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/templates">Templates</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/marky-chatbot">Chat with AI</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-image-generator">AI Images</a>
+                                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-video-generator">AI Videos</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/chatbots">Bots</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-transcription">AI Transcription</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/text-to-speech">AI Text-to-Speech</a>
+                                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-photo-generator">AI
+                                        <!-- -->Photo Studio</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-headshot-generator">AI Headshots Generator</a>
+                                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/ai-interior-design-generator">AI Interior Design Generator</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/voices">Brand Voice</a>
+                                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/guide">Guide</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/b2b">B2B Solutions</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/changelog">What&#x27;s New</a><a
+                                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700 "
+                                        href="/#contact-us">Contact Us</a>
+                                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-200 dark:hover:bg-slate-700"
+                                        href="/ai-video-generator">AI Videos
+                                        <!-- --><span
+                                            class="ml-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">New</span></a>
+                                </div><a
+                                    class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-primary-700 hover:bg-gray-100 dark:bg-slate-800"
+                                    href="/login">Log in</a><a
+                                    class="items-center rounded px-4 py-2 font-semibold focus:outline-none focus-visible:ring focus-visible:ring-primary-500 shadow-sm transition-colors duration-75 bg-gradient-to-r from-purple-600 to-indigo-600 text-white border border-transparent bg-origin-border text-base hover:from-purple-700 hover:to-indigo-700 active:bg-primary-500 disabled:opacity-90 disabled:hover:opacity-100 disabled:cursor-not-allowed block w-full text-center"
+                                    href="/login#auth-sign-up">Sign up for free</a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+                        <div class="relative isolate"><svg
+                                class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)] dark:stroke-gray-800"
+                                aria-hidden="true">
+                                <defs>
+                                    <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%"
+                                        y="-1" patternUnits="userSpaceOnUse">
+                                        <path d="M.5 200V.5H200" fill="none"></path>
+                                    </pattern>
+                                </defs><svg x="50%" y="-1" class="overflow-visible fill-gray-50 dark:hidden">
+                                    <path
+                                        d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                                        stroke-width="0"></path>
+                                </svg>
+                                <rect width="100%" height="100%" stroke-width="0"
+                                    fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"></rect>
+                            </svg>
+                            <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+                                aria-hidden="true">
+                                <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                                    style="clip-path:polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)">
+                                </div>
+                            </div>
+                            <div
+                                class="mx-auto mt-10 flex h-full flex-col items-center justify-center sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                                <div class="w-full max-w-4xl text-center xl:max-w-5xl ">
+                                    <h1
+                                        class="mt-32 px-2 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl md:text-6xl">
+                                        <span class="block xl:inline">Meal Plan Generator</span> </h1>
+                                    <p
+                                        class="mx-auto mt-3 max-w-4xl px-2 text-2xl text-gray-500 dark:text-slate-400 sm:mt-5 md:mt-5">
+                                        Generate a personalized meal plan based on your dietary preferences.</p>
+                                    <div class="mt-5 w-full sm:mt-8 sm:flex sm:justify-center">
+                                        <div
+                                            class="mx-auto w-full max-w-md text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                                            <div class="m-auto mb-10 w-full max-w-3xl">
+                                                <form
+                                                    class="mx-auto w-full max-w-3xl space-y-8 divide-y divide-gray-200 bg-white text-left shadow dark:divide-slate-200/5  dark:bg-slate-800 sm:overflow-hidden sm:rounded-md">
+                                                    <div
+                                                        class="space-y-8 divide-y divide-gray-200 px-4 py-5 dark:divide-slate-200/5 sm:p-6">
+                                                        <div>
+                                                            <div
+                                                                class="mt-6 grid grid-cols-1 gap-x-4 gap-y-6 text-left sm:grid-cols-6">
+                                                                <div class="relative sm:col-span-6"><label
+                                                                        for="keywords"
+                                                                        class="flex text-sm font-medium text-gray-700 dark:text-slate-400">Dietary
+                                                                        Preferences</label>
+                                                                    <div class="rounded-md shadow-sm mt-1 flex"><input
+                                                                            type="text" name="keywords" id="keywords"
+                                                                            placeholder="example: Vegan, Gluten-free, High-protein"
+                                                                            class="block w-full min-w-0 flex-1 rounded border-gray-300 focus:border-primary-500 focus:ring-primary-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white sm:text-sm"
+                                                                            value="" /></div>
+                                                                </div>
+                                                                <div class="relative sm:col-span-6"><label for="extra1"
+                                                                        class="flex text-sm font-medium text-gray-700 dark:text-slate-400">Meal
+                                                                        frequency</label>
+                                                                    <div class="rounded-md shadow-sm mt-1 flex"><select
+                                                                            id="extra1" name="extra1"
+                                                                            class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white sm:text-sm">
+                                                                            <option value="" disabled="" hidden=""
+                                                                                selected="">Select an option</option>
+                                                                            <option value="3 meals a day">3 meals a day
+                                                                            </option>
+                                                                            <option value="5 small meals a day">5 small
+                                                                                meals a day</option>
+                                                                            <option value="Intermittent fasting">
+                                                                                Intermittent fasting</option>
+                                                                        </select></div>
+                                                                </div>
+                                                                <div class="relative sm:col-span-6"><label for="extra2"
+                                                                        class="flex text-sm font-medium text-gray-700 dark:text-slate-400">Calorie
+                                                                        goal</label>
+                                                                    <div class="rounded-md shadow-sm mt-1 flex"><input
+                                                                            type="text" name="extra2" id="extra2"
+                                                                            placeholder="example: 2000 kcal"
+                                                                            class="block w-full min-w-0 flex-1 rounded border-gray-300 focus:border-primary-500 focus:ring-primary-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white sm:text-sm"
+                                                                            value="" /></div>
+                                                                </div>
+                                                                <div class="relative sm:col-span-6"><label for="extra3"
+                                                                        class="flex text-sm font-medium text-gray-700 dark:text-slate-400">Dietary
+                                                                        restrictions</label>
+                                                                    <div class="rounded-md shadow-sm mt-1 flex"><input
+                                                                            type="text" name="extra3" id="extra3"
+                                                                            placeholder="example: Vegan, Gluten-free, Dairy-free"
+                                                                            class="block w-full min-w-0 flex-1 rounded border-gray-300 focus:border-primary-500 focus:ring-primary-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white sm:text-sm"
+                                                                            value="" /></div>
+                                                                </div>
+                                                                <div class="relative sm:col-span-6">
+                                                                    <div class="flex flex-col"><label
+                                                                            for="shouldUseGPT4"
+                                                                            class="mr-1 flex text-sm font-medium text-gray-700 dark:text-slate-400"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                fill="none" viewBox="0 0 24 24"
+                                                                                stroke-width="2" stroke="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="mr-1 h-5 w-5 text-primary-500">
+                                                                                <path stroke-linecap="round"
+                                                                                    stroke-linejoin="round"
+                                                                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                                                                </path>
+                                                                            </svg>Use advanced AI model?<!-- --> <span
+                                                                                class="ml-1 rounded-full bg-primary-500 px-1.5 py-0.5 align-middle text-xs text-white">Best
+                                                                                Results</span></label>
+                                                                        <span class="mt-2 text-xs text-gray-500">Enable
+                                                                            this feature to leverage our cutting-edge AI
+                                                                            technology for superior performance and more
+                                                                            accurate results! Powered by GPT-4.</span>
+                                                                    </div>
+                                                                    <div class="mt-1 flex"><button
+                                                                            class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                                                                            id="headlessui-switch-:R9amrokm:"
+                                                                            role="switch" type="button" tabindex="0"
+                                                                            aria-checked="false"
+                                                                            data-headlessui-state=""><span
+                                                                                class="sr-only">Use setting</span><span
+                                                                                aria-hidden="true"
+                                                                                class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="my-3 w-fit max-w-[450px] rounded bg-indigo-500/10 px-3 py-3 text-sm text-primary-600 ring-1 ring-inset ring-indigo-500/20">
+                                                                <div>
+                                                                    <h6 class="mb-1 font-semibold">Get access to more
+                                                                        features by upgrading your plan.</h6>
+                                                                    <div
+                                                                        class="mt-2 flex w-full items-start justify-start">
+                                                                        <ul
+                                                                            class="flex w-1/2 flex-wrap items-center text-xs">
+                                                                            <li
+                                                                                class="mr-4 flex items-center space-x-1">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 20 20"
+                                                                                    fill="currentColor"
+                                                                                    aria-hidden="true"
+                                                                                    class="h-5 w-5 flex-shrink-0 text-green-500">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                                        clip-rule="evenodd"></path>
+                                                                                </svg><span>10x smarter AI</span></li>
+                                                                            <li
+                                                                                class="mr-4 flex   items-center space-x-1">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 20 20"
+                                                                                    fill="currentColor"
+                                                                                    aria-hidden="true"
+                                                                                    class="h-5 w-5 flex-shrink-0 text-green-500">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                                        clip-rule="evenodd"></path>
+                                                                                </svg><span>More customization
+                                                                                    options</span></li>
+                                                                        </ul>
+                                                                        <ul
+                                                                            class="mb-3 flex w-1/2 flex-wrap items-center text-xs">
+                                                                            <li
+                                                                                class="mr-4 flex  items-center space-x-1">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 20 20"
+                                                                                    fill="currentColor"
+                                                                                    aria-hidden="true"
+                                                                                    class="h-5 w-5 flex-shrink-0 text-green-500">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                                        clip-rule="evenodd"></path>
+                                                                                </svg><span>Unlimited generations</span>
+                                                                            </li>
+                                                                            <li
+                                                                                class="mr-4 flex   items-center space-x-1">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 20 20"
+                                                                                    fill="currentColor"
+                                                                                    aria-hidden="true"
+                                                                                    class="h-5 w-5 flex-shrink-0 text-green-500">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                                        clip-rule="evenodd"></path>
+                                                                                </svg><span>Faster generation</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div><a
+                                                                        class="mt-2 cursor-pointer font-semibold text-primary-500 underline hover:text-primary-600">Upgrade</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray-50 px-4 py-3 text-right dark:bg-slate-900/50 sm:px-6 lg:flex lg:justify-between">
+                                                        <div class="hidden lg:block"><button type="button"
+                                                                class="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary-500 shadow-sm sm:text-sm transition-colors duration-75 bg-white text-dark dark:bg-slate-800 dark:text-slate-400 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 hover:text-dark dark:hover:bg-gray-700 dark:hover:text-white active:bg-white/80 disabled:bg-gray-200 disabled:hover:bg-gray-200 disabled:cursor-not-allowed"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke-width="2"
+                                                                    stroke="currentColor" aria-hidden="true"
+                                                                    class="h-4 w-4">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M6 18L18 6M6 6l12 12"></path>
+                                                                </svg> <span>Clear inputs</span></button></div>
+                                                        <div class="flex flex-wrap sm:flex-nowrap sm:justify-end ">
+                                                            <div class="mr-5 flex items-center"><label for="language"
+                                                                    class="mr-2 hidden flex-nowrap text-sm font-medium text-gray-400 sm:block">language</label><select
+                                                                    id="language" name="language"
+                                                                    class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-slate-400 sm:text-sm">
+                                                                    <option value="English" selected="">English</option>
+                                                                    <option value="English (UK)">English (UK)</option>
+                                                                    <option value="Arabic">Arabic</option>
+                                                                    <option value="Bengali">Bengali</option>
+                                                                    <option value="Bulgarian">Bulgarian</option>
+                                                                    <option value="Chinese">Chinese</option>
+                                                                    <option value="Croatian">Croatian</option>
+                                                                    <option value="Czech">Czech</option>
+                                                                    <option value="Danish">Danish</option>
+                                                                    <option value="Dutch">Dutch</option>
+                                                                    <option value="Estonian">Estonian</option>
+                                                                    <option value="Finnish">Finnish</option>
+                                                                    <option value="French">French</option>
+                                                                    <option value="Georgian">Georgian</option>
+                                                                    <option value="German">German</option>
+                                                                    <option value="Greek">Greek</option>
+                                                                    <option value="Hebrew">Hebrew</option>
+                                                                    <option value="Hindi">Hindi</option>
+                                                                    <option value="Hungarian">Hungarian</option>
+                                                                    <option value="Indonesian">Indonesian</option>
+                                                                    <option value="Italian">Italian</option>
+                                                                    <option value="Japanese">Japanese</option>
+                                                                    <option value="Korean">Korean</option>
+                                                                    <option value="Latvian">Latvian</option>
+                                                                    <option value="Lithuanian">Lithuanian</option>
+                                                                    <option value="Malay">Malay</option>
+                                                                    <option value="Maltese">Maltese</option>
+                                                                    <option value="Norwegian">Norwegian</option>
+                                                                    <option value="Polish">Polish</option>
+                                                                    <option value="Portuguese">Portuguese</option>
+                                                                    <option value="Romanian">Romanian</option>
+                                                                    <option value="Russian">Russian</option>
+                                                                    <option value="Serbian">Serbian</option>
+                                                                    <option value="Slovak">Slovak</option>
+                                                                    <option value="Slovenian">Slovenian</option>
+                                                                    <option value="Spanish">Spanish</option>
+                                                                    <option value="Swedish">Swedish</option>
+                                                                    <option value="Tamil">Tamil</option>
+                                                                    <option value="Thai">Thai</option>
+                                                                    <option value="Turkish">Turkish</option>
+                                                                    <option value="Ukrainian">Ukrainian</option>
+                                                                    <option value="Vietnamese">Vietnamese</option>
+                                                                </select></div>
+                                                            <button type="submit" disabled=""
+                                                                class="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary-500 shadow-sm sm:text-sm transition-colors duration-75 bg-gradient-to-r from-purple-600 to-indigo-600 text-white border border-transparent bg-origin-border text-base hover:from-purple-700 hover:to-indigo-700 active:bg-primary-500 disabled:opacity-90 disabled:hover:opacity-100 disabled:cursor-not-allowed mt-3 w-full justify-center text-center sm:mt-0 sm:w-auto"><span>🤖
+                                                                    <!-- -->Generate</span></button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="relative mt-5 max-w-3xl sm:col-span-6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex w-full flex-col flex-wrap gap-x-4 gap-y-2 text-center text-gray-500 dark:text-slate-400 sm:mt-10 sm:flex-row sm:justify-center lg:text-lg">
+                                    <div>🚀
+                                        <!-- -->Powered by best AI models
+                                    </div>
+                                    <div>🌍
+                                        <!-- -->Supports 40+ languages
+                                    </div>
+                                    <div>💳
+                                        <!-- -->No credit card required
+                                    </div>
+                                    <div>⭐
+                                        <!-- -->5-star ratings
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="bg-white dark:bg-slate-800">
+        <div class="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
+            <div
+                class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                <svg viewBox="0 0 1024 1024"
+                    class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+                    aria-hidden="true">
+                    <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+                        fill-opacity="0.7"></circle>
+                    <defs>
+                        <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                            <stop stop-color="#7775D6"></stop>
+                            <stop offset="1" stop-color="#E935C1"></stop>
+                        </radialGradient>
+                    </defs>
+                </svg>
+                <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Create Faster With AI.<br />Try
+                        it Risk-Free.</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">Stop wasting time and start creating high-quality
+                        content immediately with power of generative AI.</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"><a
+                            class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                            href="/login?preset=templates">Get started for free</a></div>
+                </div>
+                <div class="relative mt-16 h-80 lg:mt-8"><img alt="App screenshot" loading="lazy" width="1824"
+                        height="1080" decoding="async" data-nimg="1"
+                        class="absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                        style="color:transparent"
+                        srcSet="https://easy-peasy.ai/_next/image?url=%2Fimages%2Fpresets3.jpg&w=1920&q=75 1x, https://easy-peasy.ai/_next/image?url=%2Fimages%2Fpresets3.jpg&w=1920&q=75 2x"
+                        src="https://easy-peasy.ai/_next/image?url=%2Fimages%2Fpresets3.jpg&w=1920&q=75" /></div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="Toastify"></div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json" crossorigin="">
+                                                {
+                                                    "props": {
+                                                        "pageProps": {
+                                                            "completions": [{
+                                                                "id": 6307638,
+                                                                "completion": "Here is a sample personalized meal plan based on your preferences:\n\nDay 1:\nBreakfast: Scrambled eggs with spinach and feta cheese, topped with avocado slices\nLunch: Grilled chicken breast salad with mixed greens, cherry tomatoes, cucumber, and a vinaigrette dressing\nDinner: Baked salmon with roasted vegetables (broccoli, carrots, and bell peppers) and quinoa\n\nDay 2:\nBreakfast: Greek yogurt with a handful of almonds and berries\nLunch: Turkey lettuce wraps with lean ground turkey, lettuce leaves, diced tomatoes, and avocado\nDinner: Grilled steak with steamed asparagus and sweet potato wedges\n\nDay 3:\nBreakfast: Protein smoothie made with almond milk, banana, spinach, and a scoop of protein powder\nLunch: Quinoa salad with grilled shrimp, black beans, corn, cherry tomatoes, and a lime dressing\nDinner: Baked chicken breast with roasted Brussels sprouts and brown rice\n\nRemember to adjust the portion sizes and ingredient quantities based on your specific calorie goals and dietary restrictions. It's always a good idea to consult with a registered dietitian or nutritionist for personalized advice.",
+                                                                "request_body": {
+                                                                    "keywords": "Protein rich food",
+                                                                    "extra1": "3 meals a day",
+                                                                    "extra2": "",
+                                                                    "extra3": "",
+                                                                    "shouldUseGPT4": "",
+                                                                    "preset": "meal-plan-generator",
+                                                                    "outputs": 1,
+                                                                    "language": "English",
+                                                                    "files": {}
+                                                                },
+                                                                "preset": "meal-plan-generator",
+                                                                "user_prompt": "Protein rich food"
+                                                            }],
+                                                            "preset": {
+                                                                "title": "Meal Plan Generator",
+                                                                "slug": "meal-plan-generator",
+                                                                "description": "Generate a personalized meal plan based on your dietary preferences.",
+                                                                "iconForeground": "text-green-700",
+                                                                "iconBackground": "bg-green-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "category": ["Tools"],
+                                                                "isFree": true,
+                                                                "outputs": 1,
+                                                                "fields": [{
+                                                                    "label": "Dietary Preferences",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: Vegan, Gluten-free, High-protein"
+                                                                }, {
+                                                                    "label": "Meal frequency",
+                                                                    "name": "extra1",
+                                                                    "type": "select",
+                                                                    "placeholder": "Meal frequency",
+                                                                    "options": ["3 meals a day", "5 small meals a day", "Intermittent fasting"]
+                                                                }, {
+                                                                    "label": "Calorie goal",
+                                                                    "name": "extra2",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: 2000 kcal"
+                                                                }, {
+                                                                    "label": "Dietary restrictions",
+                                                                    "name": "extra3",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: Vegan, Gluten-free, Dairy-free"
+                                                                }]
+                                                            },
+                                                            "locale": "en",
+                                                            "otherPresets": [{
+                                                                "title": "Employee Growth Plan Generator",
+                                                                "slug": "employee-growth-plan-generator",
+                                                                "description": "Create a structured development plan to help employees reach their full potential",
+                                                                "iconForeground": "text-indigo-700",
+                                                                "iconBackground": "bg-indigo-50",
+                                                                "category": ["Business", "HR"],
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "isFree": true,
+                                                                "fields": [{
+                                                                    "label": "Employee's Name and Current Role",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: John Doe - Junior Software Developer"
+                                                                }, {
+                                                                    "label": "Current Skills and Strengths",
+                                                                    "name": "extra1",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Strong in JavaScript, Good team player, Quick learner"
+                                                                }, {
+                                                                    "label": "Areas for Improvement",
+                                                                    "name": "extra2",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Leadership skills, Public speaking, Advanced React concepts"
+                                                                }, {
+                                                                    "label": "Career Goals",
+                                                                    "name": "extra3",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Become a Senior Developer in 2 years, Lead a team of developers"
+                                                                }, {
+                                                                    "label": "Timeline",
+                                                                    "name": "extra4",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: 12 months"
+                                                                }]
+                                                            }, {
+                                                                "title": "Performance Improvement Plan",
+                                                                "slug": "performance-improvement-plan",
+                                                                "description": "Create a structured plan to help employees improve their performance",
+                                                                "iconForeground": "text-blue-700",
+                                                                "iconBackground": "bg-blue-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "category": ["Business", "HR"],
+                                                                "isFree": true,
+                                                                "fields": [{
+                                                                    "label": "Employee Name",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: John Smith"
+                                                                }, {
+                                                                    "label": "Performance Issues",
+                                                                    "name": "extra1",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Missing deadlines, quality of work below expectations, communication issues with team members"
+                                                                }, {
+                                                                    "label": "Expected Performance Standards",
+                                                                    "name": "extra2",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Complete projects on time, maintain quality standards, improve team collaboration"
+                                                                }, {
+                                                                    "label": "Timeline for Improvement",
+                                                                    "name": "extra3",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: 90 days"
+                                                                }, {
+                                                                    "label": "Support/Resources Provided",
+                                                                    "name": "extra4",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Weekly check-ins with manager, training sessions, mentoring support"
+                                                                }, {
+                                                                    "label": "Tone",
+                                                                    "name": "tone",
+                                                                    "type": "brand_voice",
+                                                                    "placeholder": "example: professional, constructive, supportive"
+                                                                }]
+                                                            }, {
+                                                                "title": "Marketing Plan Generator",
+                                                                "slug": "marketing-plan-generator",
+                                                                "description": "Generate a comprehensive marketing plan for your business",
+                                                                "iconForeground": "text-blue-700",
+                                                                "iconBackground": "bg-blue-50",
+                                                                "category": ["Business", "Marketing"],
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "shouldUseLlama": true,
+                                                                "onlyForPaidPlans": true,
+                                                                "isFree": true,
+                                                                "fields": [{
+                                                                    "label": "Business description",
+                                                                    "name": "keywords",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Easy-Peasy.AI, AI Content and Copywriting assistant, transcribes audios, summarizes long content, generate images, has Chatbot, and more."
+                                                                }, {
+                                                                    "label": "Target audience",
+                                                                    "name": "extra1",
+                                                                    "type": "text",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Small to medium-sized businesses looking for AI solutions"
+                                                                }, {
+                                                                    "label": "Marketing goals",
+                                                                    "name": "extra2",
+                                                                    "type": "textarea",
+                                                                    "limit": 1000,
+                                                                    "placeholder": "example: Increase brand awareness, generate leads, improve customer engagement"
+                                                                }]
+                                                            }, {
+                                                                "title": "Business Plan Generator",
+                                                                "slug": "business-plan-generator",
+                                                                "description": "Generate a business plan for your company that will help you get funding",
+                                                                "iconForeground": "text-amber-700",
+                                                                "iconBackground": "bg-amber-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "category": ["Tools", "Business"],
+                                                                "outputs": 2,
+                                                                "shouldUseLlama": true,
+                                                                "onlyForPaidPlans": true,
+                                                                "isFree": true,
+                                                                "shouldUseGPT4o": true,
+                                                                "fields": [{
+                                                                    "label": "Company Name",
+                                                                    "name": "keywords",
+                                                                    "type": "textarea",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: Easy-Peasy.AI"
+                                                                }, {
+                                                                    "label": "What is the problem you are solving?",
+                                                                    "name": "extra1",
+                                                                    "type": "textarea",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: It is hard to find a good name for your company"
+                                                                }, {
+                                                                    "label": "What is your solution?",
+                                                                    "name": "extra2",
+                                                                    "type": "textarea",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: We help you generate a name for your company"
+                                                                }, {
+                                                                    "label": "What is your target market?",
+                                                                    "name": "extra3",
+                                                                    "type": "textarea",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: Startups, small businesses, etc."
+                                                                }, {
+                                                                    "label": "How you plan to reach your target market and make money?",
+                                                                    "name": "extra4",
+                                                                    "type": "textarea",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: We will use Google Ads to reach our target market"
+                                                                }]
+                                                            }, {
+                                                                "title": "Lesson Plan Generator",
+                                                                "slug": "lesson-plan-generator",
+                                                                "description": "Create a custom lesson plan for your class that will help you teach your students",
+                                                                "iconForeground": "text-purple-700",
+                                                                "iconBackground": "bg-purple-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "shouldUseGPT4o": true,
+                                                                "category": ["Education"],
+                                                                "outputs": 3,
+                                                                "isFree": true,
+                                                                "fields": [{
+                                                                    "label": "Subject",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: Math"
+                                                                }, {
+                                                                    "label": "Grade Level",
+                                                                    "name": "extra1",
+                                                                    "type": "text",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: 5th grade"
+                                                                }, {
+                                                                    "label": "Topic",
+                                                                    "name": "extra2",
+                                                                    "type": "text",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: Multiplication"
+                                                                }, {
+                                                                    "label": "Bloom Verb Selection (optional)",
+                                                                    "name": "extra3",
+                                                                    "type": "text",
+                                                                    "limit": 500,
+                                                                    "placeholder": "example: Create, Evaluate, Analyze, Apply, Understand"
+                                                                }]
+                                                            }, {
+                                                                "title": "Workout Plan Generator",
+                                                                "slug": "workout-plan-generator",
+                                                                "description": "Generate a personalized workout plan based on your fitness goals.",
+                                                                "iconForeground": "text-blue-700",
+                                                                "iconBackground": "bg-blue-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "category": ["Tools"],
+                                                                "isFree": true,
+                                                                "outputs": 1,
+                                                                "fields": [{
+                                                                    "label": "What are your fitness goals?",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "placeholder": "example: Lose weight, Gain muscle"
+                                                                }, {
+                                                                    "label": "Gender",
+                                                                    "name": "extra1",
+                                                                    "type": "select",
+                                                                    "placeholder": "Gender",
+                                                                    "options": ["Male", "Female", "Other"]
+                                                                }, {
+                                                                    "label": "Training method",
+                                                                    "name": "extra2",
+                                                                    "type": "select",
+                                                                    "placeholder": "Training method",
+                                                                    "options": ["Resistance training", "Resistance + cardio", "Meal plan only / custom routine"]
+                                                                }, {
+                                                                    "label": "Workout type",
+                                                                    "name": "extra3",
+                                                                    "type": "select",
+                                                                    "placeholder": "Workout type",
+                                                                    "options": ["Weighted", "Bodyweight", "No equipment"]
+                                                                }, {
+                                                                    "label": "Strength level",
+                                                                    "name": "extra4",
+                                                                    "placeholder": "Strength level",
+                                                                    "type": "select",
+                                                                    "options": ["Beginner", "Intermediate", "Advanced"]
+                                                                }]
+                                                            }, {
+                                                                "title": "Event Planner",
+                                                                "slug": "event-planner",
+                                                                "description": "Plan and organize your events with ease using AI.",
+                                                                "iconForeground": "text-purple-700",
+                                                                "iconBackground": "bg-purple-50",
+                                                                "shouldUseChatGPTAPI": true,
+                                                                "shouldUseGPT4o": true,
+                                                                "category": ["Tools", "Business"],
+                                                                "dateAdded": "2024-06-30",
+                                                                "isFree": true,
+                                                                "fields": [{
+                                                                    "label": "Event Name",
+                                                                    "name": "keywords",
+                                                                    "type": "text",
+                                                                    "placeholder": "e.g., Annual Company Meeting, Wedding",
+                                                                    "limit": 100
+                                                                }, {
+                                                                    "label": "Location",
+                                                                    "name": "extra3",
+                                                                    "type": "text",
+                                                                    "placeholder": "e.g., New York City, Virtual",
+                                                                    "limit": 100
+                                                                }, {
+                                                                    "label": "Number of Attendees",
+                                                                    "name": "extra1",
+                                                                    "type": "text",
+                                                                    "placeholder": "e.g., 50, 200",
+                                                                    "limit": 10
+                                                                }, {
+                                                                    "label": "Special Instructions (optional)",
+                                                                    "name": "extra2",
+                                                                    "type": "textarea",
+                                                                    "placeholder": "",
+                                                                    "limit": 500
+                                                                }]
+                                                            }, {
+                                                                "title": "Chat with MARKy",
+                                                                "slug": "chat",
+                                                                "iconForeground": "text-primary-700",
+                                                                "iconBackground": "bg-primary-50",
+                                                                "description": "Easily create content by just chatting with AI.",
+                                                                "landingPageSlug": "/marky-chatbot",
+                                                                "fields": [],
+                                                                "category": "Tools",
+                                                                "isAbsoluteURL": true
+                                                            }, {
+                                                                "title": "AI Text-to-Speech",
+                                                                "slug": "tts",
+                                                                "iconForeground": "text-green-700",
+                                                                "iconBackground": "bg-green-50",
+                                                                "description": "Generate audio from text using AI. Supports 30+ languages.",
+                                                                "landingPageSlug": "/text-to-speech",
+                                                                "fields": [],
+                                                                "category": "Content",
+                                                                "isAbsoluteURL": true
+                                                            }, {
+                                                                "title": "AI Art \u0026 Images",
+                                                                "slug": "ai-images",
+                                                                "iconForeground": "text-blue-700",
+                                                                "iconBackground": "bg-blue-50",
+                                                                "description": "Generate stunning images and art with AI. Express ideas. Stand out.",
+                                                                "landingPageSlug": "/ai-image-generator",
+                                                                "fields": [],
+                                                                "category": "Social Media",
+                                                                "isAbsoluteURL": true
+                                                            }, {
+                                                                "title": "AI Photo Generator",
+                                                                "slug": "/ai-images/models",
+                                                                "iconForeground": "text-indigo-700",
+                                                                "iconBackground": "bg-indigo-50",
+                                                                "description": "Generate realistic photos with AI. Create custom images for any purpose.",
+                                                                "landingPageSlug": "/ai-photo-generator",
+                                                                "fields": [],
+                                                                "category": ["Tools", "Content", "Social Media"],
+                                                                "isAbsoluteURL": true,
+                                                                "badge": "New",
+                                                                "dateAdded": "2024-09-04"
+                                                            }, {
+                                                                "title": "AI Headshot Generator",
+                                                                "slug": "headshots",
+                                                                "iconForeground": "text-purple-700",
+                                                                "iconBackground": "bg-purple-50",
+                                                                "description": "Generate professional headshots with AI. For LinkedIn, email signatures, and more.",
+                                                                "landingPageSlug": "/ai-headshot-generator",
+                                                                "fields": [],
+                                                                "category": ["Tools", "Business", "Resume", "HR", "Social Media"],
+                                                                "isAbsoluteURL": true,
+                                                                "badge": "New",
+                                                                "dateAdded": "2024-08-23"
+                                                            }],
+                                                            "__lang": "en",
+                                                            "__namespaces": {
+                                                                "common": {},
+                                                                "cookie": {
+                                                                    "title": "We use cookies",
+                                                                    "description": "By clicking \"Accept all\", you agree to the storing of cookies on your device for functional, analytics, and advertising purposes.",
+                                                                    "acceptAll": "Accept all",
+                                                                    "rejectAll": "Reject all",
+                                                                    "privacyPolicy": "See our privacy policy"
+                                                                },
+                                                                "tools": {
+                                                                    "Progress Note Generator": "Psychotherapy Progress Note Generator",
+                                                                    "Goals Achieved": "Goals Addressed",
+                                                                    "Content Rewriter": "Paragraph Rewriter",
+                                                                    "Reply To Email": "Email Response Generator",
+                                                                    "User Story": "Agile User Story Generator",
+                                                                    "Acceptance Criteria": "Acceptance Criteria Generator",
+                                                                    "Product Descriptions": "Product Description Generator",
+                                                                    "Instagram Reel Hashtags": "Instagram Hashtag Generator",
+                                                                    "ChatGPT Prompt Generator": "Writing Prompt Generator",
+                                                                    "Generate a prompt for ChatGPT to generate a perfect response for your needs": "Generate a prompt for ChatGPT or another AI tool to generate a perfect response for your needs",
+                                                                    "Make your headlines pop with our headline generator!": "Generate eye-catching headlines with our AI-powered title generator tool.",
+                                                                    "Generate a set of random lottery numbers": "Generate a set of random lottery numbers for TOTO, 4D, Powerball, Mega Millions, EuroMillions, Lotto, and more!",
+                                                                    "Dynamic Template": "Magic AI Tool",
+                                                                    "Generate any template from a single prompt.": "Create any AI Tool from a single prompt.",
+                                                                    "Testimonial \u0026 Review Generator": "Review Generator",
+                                                                    "Superior performance": "10x smarter AI",
+                                                                    "Turn a sentence into an email": "Create polished, professional emails in minutes with AI. From marketing newsletters to outbound sales emails"
+                                                                },
+                                                                "footer": {},
+                                                                "contact": {},
+                                                                "steps": {},
+                                                                "pricing": {
+                                                                    "Save 40% with yearly billing": "Save 50% with yearly billing"
+                                                                }
+                                                            }
+                                                        },
+                                                        "__N_SSG": true
+                                                    },
+                                                    "page": "/templates/[slug]",
+                                                    "query": {
+                                                        "slug": "meal-plan-generator"
+                                                    },
+                                                    "buildId": "xy_M1UjDem6TTdP-c_OZH",
+                                                    "isFallback": false,
+                                                    "dynamicIds": [98651, 49575, 92583, 70685, 75475, 68890, 47950, 5951, 55042],
+                                                    "gsp": true,
+                                                    "locale": "en",
+                                                    "locales": ["en", "ja", "es", "fr", "it", "de", "ko", "zh", "th", "ar", "pt"],
+                                                    "defaultLocale": "en",
+                                                    "scriptLoader": []
+                                                }
+                                            </script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="16ac5b3892f946b135b27a50-|49" defer></script>
+</body>
+
+</html>
